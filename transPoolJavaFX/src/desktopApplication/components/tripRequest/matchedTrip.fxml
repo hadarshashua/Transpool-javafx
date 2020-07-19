@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<HBox id="matchedTripHBox" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" style="-fx-background-color: #ffcce3;" stylesheets="@matchedTrip.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="desktopApplication.components.tripRequest.MatchedTripController">
+   <children>
+      <VBox minWidth="100.0" prefHeight="190.0" prefWidth="120.0">
+         <children>
+            <Label text="Id:">
+               <padding>
+                  <Insets left="3.0" />
+               </padding>
+            </Label>
+            <Label text="Passenger name:">
+               <VBox.margin>
+                  <Insets left="3.0" />
+               </VBox.margin>
+            </Label>
+            <Label text="Start station:">
+               <padding>
+                  <Insets left="3.0" />
+               </padding>
+            </Label>
+            <Label text="End station:">
+               <padding>
+                  <Insets left="3.0" />
+               </padding>
+            </Label>
+            <Label fx:id="tripRequestTimeLabel" text="Time:">
+               <padding>
+                  <Insets left="3.0" />
+               </padding>
+            </Label>
+            <Label text="Day:">
+               <padding>
+                  <Insets left="3.0" />
+               </padding>
+            </Label>
+            <Label text="Price:">
+               <padding>
+                  <Insets left="3.0" />
+               </padding>
+            </Label>
+            <Label fx:id="offeredTripTimeLabel" text="Arrive time:">
+               <padding>
+                  <Insets left="3.0" />
+               </padding>
+            </Label>
+            <Label text="Fuel consumption:">
+               <padding>
+                  <Insets left="3.0" />
+               </padding>
+            </Label>
+            <ComboBox fx:id="ownersAndIdsComboBox" promptText="All owners">
+               <VBox.margin>
+                  <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+               </VBox.margin>
+            </ComboBox>
+         </children>
+      </VBox>
+      <VBox prefHeight="200.0" prefWidth="80.0">
+         <children>
+            <Label fx:id="idLabel" />
+            <Label fx:id="nameLabel" />
+            <Label fx:id="startStationLabel" />
+            <Label fx:id="endStationLabel" />
+            <Label fx:id="timeLabel" />
+            <Label fx:id="dayLabel" />
+            <Label fx:id="priceLabel" />
+            <Label fx:id="arriveTimeLabel" />
+            <Label fx:id="fuelConsumptionLabel" />
+         </children>
+      </VBox>
+   </children>
+</HBox>

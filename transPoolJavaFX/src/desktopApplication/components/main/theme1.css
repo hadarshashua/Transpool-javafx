@@ -1,0 +1,38 @@
+.Title{
+    -fx-text-fill: #e27418;
+    -fx-font-size: 50px;
+    -fx-font-family: "Freestyle Script";
+    -fx-font-weight: bold;
+}
+
+.SecondaryTitles{
+    -fx-text-fill: black;
+    -fx-font-size: 25px;
+    -fx-font-weight: bold;
+    -fx-font-family: "Gabriola";
+}
+
+.Button{
+    -fx-font-family: "Gabriola";
+    -fx-font-size: 17px;
+    -fx-font-weight: bold;
+    -fx-background-color: linear-gradient(from 13px 38px to 52px 52px, reflect,  #d2691e, #ffa500 100%);
+}
+
+.Label{
+    -fx-font-family: "Gabriola";
+    -fx-font-weight: bold;
+    -fx-font-size: 17px;
+}
+
+.Background{
+    -fx-background-color: #fff0e1;
+}
+
+.SmallTitle{
+    -fx-text-fill: #e27418;
+    -fx-font-size: 35px;
+    -fx-font-family: "Freestyle Script";
+    -fx-font-weight: bold;
+}
+

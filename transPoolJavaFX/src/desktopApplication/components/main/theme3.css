@@ -1,0 +1,41 @@
+.Title{
+    -fx-font-size: 40px;
+    -fx-text-fill: linear-gradient(to right, #0b1880, #0e97a1);
+    -fx-font-family: "Arial Rounded MT Bold"
+}
+
+.SecondaryTitles{
+    -fx-text-fill: black;
+    -fx-font-size: 17px;
+    -fx-font-family: "Arial Rounded MT Bold"
+}
+
+.Button{
+    -fx-font-family: "System";
+    -fx-font-weight: bold;
+    -fx-font-size: 12px;
+    //-fx-background-color: radial-gradient(center 50% 50% , radius 120px , #ffebcd, #008080);
+    //-fx-background-color: radial-gradient(focus-angle 45deg , focus-distance 20% , center 25% 25% , radius 50% , reflect, #808080, #a9a9a9 75% , #696969);
+    -fx-background-color: radial-gradient(focus-angle 45deg , focus-distance 20% , center 25% 25% , radius 50% , reflect, #4875a6, #63a9be 75% , #45549e);
+
+}
+
+.Label{
+    -fx-font-family: "System";
+    //-fx-font-weight: bold;
+    -fx-font-size: 12px;
+}
+
+.Background{
+    //-fx-background-color: #e4e4e4;
+    -fx-background-color: #dee7e9;
+}
+
+.SmallTitle{
+    -fx-text-fill: #018286;
+    -fx-font-size: 22px;
+    -fx-font-family: "Arial Rounded MT Bold";
+}
+
+//#e4e4e4
+//#ecf3f3

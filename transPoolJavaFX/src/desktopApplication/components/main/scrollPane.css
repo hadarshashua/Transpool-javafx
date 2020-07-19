@@ -1,0 +1,6 @@
+.scrollpaneContainer .viewport{
+    -fx-background-image: url("vector-city-map.jpg");
+    -fx-background-repeat: stretch;
+    -fx-background-size: 2200 1800;
+    -fx-background-position: center center;
+}

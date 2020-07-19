@@ -1,0 +1,7 @@
+.MatchedTripLabel{
+    -fx-text-fill: black;
+}
+
+.MatchedTripHBox{
+     -fx-background-color: pink;
+}

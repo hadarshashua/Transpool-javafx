@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<ScrollPane fitToHeight="true" fitToWidth="true" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="desktopApplication.components.feedback.FeedbackController">
+   <content>
+      <GridPane fx:id="gridPane" hgap="5.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="250.0" minWidth="570.0" prefHeight="300.0" prefWidth="570.0" styleClass="Background">
+        <columnConstraints>
+            <ColumnConstraints hgrow="NEVER" maxWidth="10.0" minWidth="10.0" prefWidth="10.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="150.0" minWidth="150.0" prefWidth="150.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="250.0" minWidth="200.0" prefWidth="250.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="150.0" prefWidth="150.0" />
+            <ColumnConstraints hgrow="NEVER" maxWidth="10.0" minWidth="10.0" prefWidth="10.0" />
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints maxHeight="10.0" minHeight="10.0" prefHeight="10.0" vgrow="NEVER" />
+          <RowConstraints maxHeight="94.0" minHeight="40.0" prefHeight="40.0" vgrow="NEVER" />
+          <RowConstraints maxHeight="198.00001525878906" minHeight="40.0" prefHeight="40.0" vgrow="NEVER" />
+          <RowConstraints vgrow="NEVER" />
+            <RowConstraints minHeight="10.0" prefHeight="217.33334350585938" vgrow="ALWAYS" />
+            <RowConstraints vgrow="NEVER" />
+            <RowConstraints maxHeight="10.0" minHeight="10.0" prefHeight="10.0" vgrow="NEVER" />
+        </rowConstraints>
+         <children>
+            <Label styleClass="SmallTitle" text="Add Feedback" textFill="#018286" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="1">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="20.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets />
+               </GridPane.margin>
+            </Label>
+            <Label text="Rate (1-worse, 5-best):" GridPane.columnIndex="1" GridPane.rowIndex="2">
+               <GridPane.margin>
+                  <Insets left="5.0" />
+               </GridPane.margin>
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <RadioButton fx:id="twoRadioButton" mnemonicParsing="false" onAction="#twoRadioButtonAction" text="2" GridPane.columnIndex="2" GridPane.rowIndex="2">
+               <GridPane.margin>
+                  <Insets left="50.0" />
+               </GridPane.margin>
+            </RadioButton>
+            <RadioButton fx:id="oneRadioButton" mnemonicParsing="false" onAction="#oneRadioButtonAction" text="1" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+            <RadioButton fx:id="threeRadioButton" mnemonicParsing="false" onAction="#threeRadioButtonAction" text="3" GridPane.columnIndex="2" GridPane.rowIndex="2">
+               <GridPane.margin>
+                  <Insets left="100.0" />
+               </GridPane.margin>
+            </RadioButton>
+            <RadioButton fx:id="fourRadioButton" mnemonicParsing="false" onAction="#fourRadioButton" text="4" GridPane.columnIndex="2" GridPane.rowIndex="2">
+               <GridPane.margin>
+                  <Insets left="150.0" />
+               </GridPane.margin>
+            </RadioButton>
+            <RadioButton fx:id="fiveRadioButton" mnemonicParsing="false" onAction="#fiveRadioButtonAction" text="5" GridPane.columnIndex="2" GridPane.rowIndex="2">
+               <GridPane.margin>
+                  <Insets left="200.0" />
+               </GridPane.margin>
+            </RadioButton>
+            <TextArea fx:id="feedbackTextArea" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.columnSpan="2" GridPane.rowIndex="3" GridPane.rowSpan="2" />
+            <Label text="Write feedback:" GridPane.columnIndex="1" GridPane.rowIndex="3">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets left="5.0" />
+               </GridPane.margin>
+            </Label>
+            <Button fx:id="cancelButton" mnemonicParsing="false" onAction="#cancelButtonAction" text="cancel" GridPane.columnIndex="1" GridPane.rowIndex="5">
+               <GridPane.margin>
+                  <Insets top="5.0" />
+               </GridPane.margin>
+            </Button>
+            <Button fx:id="addFeedbackButton" mnemonicParsing="false" onAction="#addFeedbackButtonAction" text="Add feedback" GridPane.columnIndex="3" GridPane.halignment="RIGHT" GridPane.rowIndex="5">
+               <GridPane.margin>
+                  <Insets top="5.0" />
+               </GridPane.margin>
+            </Button>
+            <Label fx:id="errorRateLabel" textFill="#c90512" GridPane.columnIndex="3" GridPane.rowIndex="2">
+               <GridPane.margin>
+                  <Insets left="5.0" />
+               </GridPane.margin>
+            </Label>
+         </children>
+      </GridPane>
+   </content>
+</ScrollPane>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Spinner?>
+<?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<ScrollPane fitToHeight="true" fitToWidth="true" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="desktopApplication.components.matchTrip.MatchTripController">
+   <content>
+      <BorderPane fx:id="borderPane" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="300.0" minWidth="550.0" prefHeight="400.0" prefWidth="550.0" styleClass="Background">
+         <top>
+            <VBox prefWidth="100.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Label contentDisplay="CENTER" styleClass="SmallTitle" text="Match Trip" textFill="#018286">
+                     <font>
+                        <Font name="Arial Rounded MT Bold" size="20.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="240.0" />
+                     </VBox.margin>
+                  </Label>
+                  <ToolBar prefWidth="200.0">
+                     <items>
+                        <Label text="Enter max options to show:">
+                           <font>
+                              <Font name="Arial Rounded MT Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <Spinner fx:id="maxOptionsSpinner" prefHeight="25.0" prefWidth="100.0" />
+                        <Button fx:id="searchButton" mnemonicParsing="false" onAction="#searchButtonAction" text="Search" />
+                        <CheckBox fx:id="directOnlyCheckBox" mnemonicParsing="false" text="Press For Direct Trip" />
+                     </items>
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                  </ToolBar>
+               </children>
+            </VBox>
+         </top>
+         <center>
+            <ScrollPane fitToWidth="true">
+               <content>
+                  <FlowPane fx:id="optionsFlowPane" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="300.0" prefWidth="600.0">
+                     <children>
+                        <Label fx:id="textLabel">
+                           <font>
+                              <Font name="Arial Rounded MT Bold" size="14.0" />
+                           </font>
+                           <FlowPane.margin>
+                              <Insets />
+                           </FlowPane.margin>
+                        </Label>
+                     </children>
+                  </FlowPane>
+               </content>
+            </ScrollPane>
+         </center>
+         <bottom>
+            <ToolBar prefHeight="40.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+              <items>
+                <Button fx:id="cancelButton" mnemonicParsing="false" onAction="#cancelButtonAction" text="cancel" />
+              </items>
+            </ToolBar>
+         </bottom>
+      </BorderPane>
+   </content>
+</ScrollPane>

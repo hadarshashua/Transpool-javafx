@@ -1,0 +1,8 @@
+.OfferedTripLabel{
+    -fx-text-fill: black;
+}
+
+.OfferedTripButton{
+    -fx-text-fill: black;
+    -fx-background-color: white
+}
